@@ -1,2 +1,2 @@
-clas Artist
+class Artist
 end
