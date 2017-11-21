@@ -21,7 +21,7 @@ class Artist
   end
 
   def self.song_count
-    @@song_count << @songs.split(",")
+    @songs.collect{|song| @@song_count << song}
     @@song_count.length
   end
 end
