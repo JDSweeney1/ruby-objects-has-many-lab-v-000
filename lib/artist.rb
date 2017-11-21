@@ -20,6 +20,9 @@ class Artist
     song.artist = self
   end
 
+  def add_to_total_song_count
+    @@song_count << @songs.split
+
   def song_count
   end
 end
