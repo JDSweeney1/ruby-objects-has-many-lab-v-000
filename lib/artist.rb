@@ -20,8 +20,8 @@ class Artist
     song.artist = self
   end
 
-  def song_count
-    self.songs.collect{|song| @@song_count << song}
+  def self.song_count
+    Artist.name.songs.collect{|song| @@song_count << song}
     @@song_count.length
   end
 end
