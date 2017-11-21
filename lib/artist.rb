@@ -25,5 +25,6 @@ class Artist
   end
 
   def song_count
+    @@song_count << @songs.split
   end
 end
